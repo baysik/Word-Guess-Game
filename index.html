@@ -8,15 +8,16 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
   </head>
   <body>
       
-    <!-- Optional JavaScript -->
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     
     
@@ -24,7 +25,17 @@
       <div class="container">
         <div class="jumbotron">
           <h1 class="display-5">Play Hangman!</h1>
-          <p class="lead">_ _ _ _</p>
+          <h1 class="display-4 font-weight-normal cssborder">Guess Below!</h1>
+          <h1 class="display-1 cssguess" id="display-word">_ _ _ _</h1>
+          <h1 class="display-5 float-left fas fa-question-circle"></h1>
+          <h1 class="display-5" id="guesses">Guesses:</h1>
+          <h1 class="display-5" id="letters-guessed">Letters Guessed:</h1>
+          <h1 class="display-5" id="remaining-guesses">Remaining Guesses:</h1>
+          <h1 class="display-7 float-left fas fa-trophy"></h1>
+          <h1 class="display-7 float-left" id="wins">Wins:</h1>
+          <h1 id="underscores"></h1>
+          <h1 id="rightAnswer"></h1>
+          <h1 id="wrongAnswer"></h1>
         </div>
       </div>
     <div class="container">
@@ -34,5 +45,10 @@
         <h3 class="text-center text-muted">do your best to guess correctly!</h3>
     </div>
 
+
+
+
+    <!-- Javascript link -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
   </body>
 </html>
